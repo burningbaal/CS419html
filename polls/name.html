@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
+	{% load staticfiles %} 
 <head>
 	<!--this group for local use w/o django-->
 	<link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/polls/css/limbo.css">
 	<!--this group for use w/ django-->
-	{% load staticfiles %} 
 	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/bootstrap.min.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/bootstrap-theme.min.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/limbo.css' %}" />
