@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="../css/limbo.css">
 <style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-form {color: yellow;}
+	
 </style>
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p><br>
-<form action="/polls/name-test.html" method="post">
-    {% csrf_token %}
-	{{ form }}
-    <input type="submit" value="OK">
-</form>
-<br><p>This is a second paragraph</p>
+<div class=top> <h1>This is a heading</h1> </div>
+<div class=left> <h3>Left Side</h3> </div>
+	
+<div class=main> 
+	<p>This is a paragraph.</p><br>
+	<a href="../limbo.css">css</a>
+	<form action="/polls/name-test.html" method="post">
+		{% csrf_token %}
+		{{ form }}
+		<input type="submit" value="OK">
+	</form>
+	<br><p class=bold>This is a second paragraph</p>
+</div>
 </body>
 </html>
 
