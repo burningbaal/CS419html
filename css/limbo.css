@@ -10,70 +10,39 @@ Author: Keith McKinley, John Watts, Marta Wegner
 Author URI:
 */
  
-/* reset styles */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0; padding: 0;  border: 0; outline: 0; font-size: 100%;
-    vertical-align: baseline; background: transparent;
-}
-body { line-height: 1; }
-ol, ul { list-style: none; }
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; }
-:focus { outline: 0; }
-ins { text-decoration: none; }
-del { text-decoration: line-through; }
-table { border-collapse: collapse; border-spacing: 0; }
 
-form {color: yellow;}
- 
 body {
-    font-size: 62.5%;
-    text-align: center;
-    color: #000000;
+	padding-top: 110px;
+	padding-left: 110px;
 }
-.bold {
-	font-weight: bold;
-}
- 
-/* container - place inside each section or around the entire page depending on your layout */
-.container {
-    width: 960px;
-    margin: 0 auto;
-    text-align: left;
-    position: relative;
-}
- 
-/* for clearing any floats <br class=&quot;clearfloat&quot; /> */
-.clearfloat {
-    clear:both;
-    height:0;
-    font-size: 1px;
-    line-height: 0px;
-}
- 
-.top {
-  position: fixed;
-  top: 0;
+.left-bar { 
+  /* position: fixed; */
+  padding-top: 110px;
   left: 0;
-  z-index: 999;
-  width: 100%;
-  height: 23px;
-}
-.main {
-	padding-top: 23px;
-}
-.left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 10%;
+  /*z-index: 999;
+  width: 100px;
   height: 100%;
   border: right;
-  padding-top: 10em;
+  padding-top: 10em;/* */
 }
- 
+ .navbar-fixed-left {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 139px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -50px;
+  margin-left: 140px;
+}

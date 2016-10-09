@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/limbo.css">
-<style>
-	
-</style>
 </head>
+<div class="navbar navbar-default navbar-fixed-top"> 
+	<div class=container> <h1>This is a heading</h1></div>
+</div>
+<div class="navbar navbar-default navbar-fixed-left left-bar"> 
+	<h3>Left Side</h3> 
+	<p> hello</p>
+	<p> world</p>
+</div>
+	
 <body>
 
-<div class=top> <h1>This is a heading</h1> </div>
-<div class=left> <h3>Left Side</h3> </div>
-	
-<div class=main> 
+<div class="container">
+ <div class="row">
 	<p>This is a paragraph.</p><br>
-	<a href="../limbo.css">css</a>
+	<a href="../css/limbo.css">css</a>
 	<form action="/polls/name-test.html" method="post">
 		{% csrf_token %}
 		{{ form }}
 		<input type="submit" value="OK">
 	</form>
 	<br><p class=bold>This is a second paragraph</p>
+  </div>
 </div>
 </body>
 </html>
