@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	{% load staticfiles %} 
+	{% load static %} 
 <head>
 	<!--this group for local use w/o django-->
 	<link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
 </head>
 <div class="navbar navbar-default navbar-fixed-top"> 
 	<div class=container> 
-		<img src="static/polls/limbo-clipart-1.jpg" alt="limbo graphic"/>
+		<img class="top-bar" src="static/polls/limbo-clipart-1.jpg" alt="limbo graphic"/>
 		<img src="{% static 'polls/static/limbo-clipart-1.jpg' %}" alt="limbo graphic"/>
 		<h1>This is a heading</h1>
 	</div>
