@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-	{% load static %} 
-<head>
-	<!--this group for local use w/o django-->
-	<!--link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/polls/css/limbo.css"-->
-	<!--this group for use w/ django-->
-	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/bootstrap.min.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/bootstrap-theme.min.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/limbo.css' %}" />
-</head>
-<div class="navbar navbar-default navbar-fixed-top"> 
-	<div class=container> 
-		<img class="top-bar" src="/static/polls/img/limbo-clipart-1.jpg" alt="limbo graphic"/>
-		<img src="{% static 'polls/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/>
-		<h1>This is a heading</h1>
-	</div>
-</div>
-<div class="navbar navbar-default navbar-fixed-left left-bar"> 
-	<h3>Left Side</h3> 
-	<p> hello</p>
-	<p> world</p>
-</div>
-	
-<body>
+{% extends "base.html" %}
 
-<div class="container">
+{% block content %}
  <div class="row">
 	<p>This is a paragraph.</p><br>
 	<a href="../css/limbo.css">css</a>
@@ -37,7 +11,4 @@
 	</form>
 	<br><p class=bold>This is a second paragraph</p>
   </div>
-</div>
-</body>
-</html>
-
+{% endblock %}
