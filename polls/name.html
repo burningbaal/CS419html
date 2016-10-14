@@ -3,9 +3,9 @@
 	{% load static %} 
 <head>
 	<!--this group for local use w/o django-->
-	<link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap.min.css">
+	<!--link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/polls/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/polls/css/limbo.css">
+	<link rel="stylesheet" type="text/css" href="../static/polls/css/limbo.css"-->
 	<!--this group for use w/ django-->
 	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/bootstrap.min.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'polls/css/bootstrap-theme.min.css' %}" />
@@ -13,8 +13,8 @@
 </head>
 <div class="navbar navbar-default navbar-fixed-top"> 
 	<div class=container> 
-		<img class="top-bar" src="static/polls/limbo-clipart-1.jpg" alt="limbo graphic"/>
-		<img src="{% static 'polls/static/limbo-clipart-1.jpg' %}" alt="limbo graphic"/>
+		<img class="top-bar" src="/static/polls/img/limbo-clipart-1.jpg" alt="limbo graphic"/>
+		<img src="{% static 'polls/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/>
 		<h1>This is a heading</h1>
 	</div>
 </div>
