@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+        {% load static %}
+<head>
+	<!-- Written by Keith McKinley for CS419, Oregon State Universtity, Fall 2016-->
+	<!-- Using Django 1.10 and Python 2.7 -->
+        <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/bootstrap.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/bootstrap-theme.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/limbo.css' %}" />
+</head>
+  <body>
+	<div class="navbar navbar-default navbar-fixed-top">
+	        <div class=container>
+				<table><tr>
+	                <td><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></td>
+	                <td>This is a heading</h1></td>
+					<td>User Name</td>
+					</tr></table>
+	        </div>
+	</div>
+	<div class="navbar navbar-default navbar-fixed-left left-bar">
+	        <h3>Users</h3>
+	        <h3>Equipment</h3>
+	        <h3>Add User</h3>
+	        <h3>Server<br>Configuration</h3>
+	</div>
+
+	<div class="container">
+	<div class="row">
+		{% block content %}
+		{% endblock %}
+	</div>
+		<script src="{% static 'limbo/css/bootstrap.min.js' %}"></script>
+	</div>
+</body>
+</html>
