@@ -7,22 +7,27 @@
         <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/bootstrap.min.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/bootstrap-theme.min.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/limbo.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'limbo/js/bootstrap.min.js' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'limbo/js/limbo.js' %}" />
 </head>
   <body>
 	<div class="navbar navbar-default navbar-fixed-top">
 	        <div class=container>
-				<table><tr>
-	                <td><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></td>
-	                <td>This is a heading</h1></td>
-					<td>User Name</td>
+				<table style="width:100%;">
+					<col align="left">
+					<col align="left">
+					<col align="right">
+					<tr>
+						<td><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></td>
+						<td>This is a heading</h1></td>
+						<td style="align:right;">User Name</td>
 					</tr></table>
 	        </div>
 	</div>
 	<div class="navbar navbar-default navbar-fixed-left left-bar">
-	        <h3>Users</h3>
-	        <h3>Equipment</h3>
-	        <h3>Add User</h3>
-	        <h3>Server<br>Configuration</h3>
+	        <div id="UsersEdit" class="row"><h3>Users</h3></div>
+	        <div id="EquipmentEdit" class="row"><h3>Equipment</h3></div>
+	        <div id="ServerEdit" class="row"><h3>Server<br>Configuration</h3></div>
 	</div>
 
 	<div class="container">
