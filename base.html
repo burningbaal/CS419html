@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/bootstrap.min.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/bootstrap-theme.min.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'limbo/css/limbo.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'limbo/js/bootstrap.min.js' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'limbo/js/limbo.js' %}" />
+        <script src="{% static 'limbo/js/bootstrap.min.js' %}" ></script>
+        <script src="{% static 'limbo/js/limbo.js' %}" ></script>
 </head>
   <body>
 	<div class="navbar navbar-default navbar-fixed-top">
@@ -35,7 +35,7 @@
 		{% block content %}
 		{% endblock %}
 	</div>
-		<script src="{% static 'limbo/css/bootstrap.min.js' %}"></script>
+		<script src="{% static 'limbo/js/bootstrap.min.js' %}"></script>
 	</div>
 </body>
 </html>
