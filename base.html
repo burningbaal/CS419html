@@ -12,30 +12,30 @@
 </head>
   <body>
 	<div class="navbar navbar-default navbar-fixed-top">
-	        <div class=container>
-				<table style="width:100%;">
-					<col align="left">
-					<col align="left">
-					<col align="left">
-					<col align="right">
-					<tr>
-						<td><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></td>
-						<nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header">
-							<td><div class="navbar-header">
-							  <a class="navbar-brand" href="#">Limbo Lab Management</a>
-							</div><</td>
-							<td><ul class="nav navbar-nav">
-								<li><a href="Users.html">Users</a></li>
-								<li><a href="Equipment.html">Equipment</a></li>
-								<li><a href="ServerConfig.html">Server</a></li> 
-							</ul></td>
-							<td style="align:right;" align="right">User Name</td>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2"><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></div>
+				<div class="col-md-10">
+					<div class="row"><h1>Limbo Lab Management</h1>
 					</div>
+					<div class="row">
+						
+							<div class="col-md-8 navbar-header"><a class="navbar-brand" href="#">Limbo</a>
+						</div>
+						<div class="col-md-2">User Name</div>
 					</div>
-					</nav>
-					</tr>
-				</table>
-	        </div>
+					<div class="row">
+						<nav class="navbar navbar-default">
+						<ul class="nav navbar-nav">
+							<li><a href="Users.html">Users</a></li>
+							<li><a href="Equipment.html">Equipment</a></li>
+							<li><a href="ServerConfig.html">Server</a></li> 
+						</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--div class="navbar navbar-default navbar-fixed-left left-bar">
 	        <div id="UsersEdit" class="row"><h4>Users</h4></div>
