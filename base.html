@@ -17,13 +17,13 @@
 				<div class="col-md-2"><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></div>
 				<div class="col-md-10">
 					<div class="row">
-						<h1>Limbo Lab Management</h1>
+						<div class="col-lg-6"><h1>Limbo Lab Management</h1></div>
 						<div class="pull-right col-md-2 text-right" onClick='alert("will Log Out");'>User Name</div>
 					</div>
 					<div class="row">
 						<nav class="navbar navbar-default">
-							<div class="col-md-8">
-								<div class="navbar-header">
+							<div class="col-lg-8">
+								<div class="col-lg-4 navbar-header">
 									<a class="navbar-brand" href="#">Limbo</a>
 								</div>
 								<div class="nav navbar-nav">
@@ -38,18 +38,12 @@
 			</div>
 		</div>
 	</div>
-	<!--div class="navbar navbar-default navbar-fixed-left left-bar">
-	        <div id="UsersEdit" class="row"><h4>Users</h4></div>
-	        <div id="EquipmentEdit" class="row"><h5>Equipment</h5></div>
-	        <div id="ServerEdit" class="row"><h6>Server<br>Configuration</h6></div>
-	</div-->
-
 	<div class="container">
-	<div class="row">
-		{% block content %}
-		{% endblock %}
-	</div>
+		<div class="row">
+			{% block content %}
+			{% endblock %}
+		</div>
 		<script src="{% static 'limbo/js/bootstrap.min.js' %}"></script>
 	</div>
-</body>
+  </body>
 </html>
