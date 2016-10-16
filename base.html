@@ -10,33 +10,27 @@
         <script src="{% static 'limbo/js/bootstrap.min.js' %}" ></script>
         <script src="{% static 'limbo/js/limbo.js' %}" ></script>
 </head>
-  <body>
+  <body height="100%">
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-1"><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></div>
-				<div class="col-md-11">
-					<div class="row">
-						<!--div class="container-fluid"><h1>Limbo Lab Management</h1></div-->
-						
-					</div>
-					<div class="row">
-						<nav class="navbar navbar-default">
-							<div class="container-fluid">
-								<div class="navbar-header">
-									<a class="navbar-brand" href="#">Limbo</a>
-								</div>
-								<ul class="nav navbar-nav">
-									<li onClick='alert("go to useres");'><a href="#">Users</a></li>
-									<li onClick='alert("go to equipment");'><a href="#">Equipment</a></li>
-									<li onClick='alert("go to server config");'><a href="#">Server</a></li>
-								</ul>
-								<ul class="nav navbar-nav navbar-right">
-									<li onClick='alert("will Log Out");'><a href="#">User Name</a></li>
-								</ul>
+				<div class="col-md-2"><img style="height:100px;width:auto;" class="top-bar" src="{% static 'limbo/img/limbo-clipart-1.jpg' %}" alt="limbo graphic"/></div>
+				<div class="col-md-10">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid" style="vertical-align:bottom;">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="#">Limbo</a>
 							</div>
-						</nav>
-					</div>
+							<ul class="nav navbar-nav">
+								<li onClick='alert("go to useres");'><a href="#">Users</a></li>
+								<li onClick='alert("go to equipment");'><a href="#">Equipment</a></li>
+								<li onClick='alert("go to server config");'><a href="#">Server</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li onClick='alert("will Log Out");'><a href="#">User Name</a></li>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
