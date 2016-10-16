@@ -3,7 +3,7 @@
 {% block content %}
  <div class="row">
 	<p>This is the user management page</p><br>
-	<form action="/users.html" method="post">
+	<form action="/edit/users.html" method="post">
 		{% csrf_token %}
 		{{ form }}
 		<input type="submit" value="OK">
