@@ -3,6 +3,7 @@
 {% block content %}
  <div class="row">
 	<p>This is the equipment management page</p><br>
+	{{ SubmitMessage }}<br>
 	<form action="/edit/equipment.html" method="post">
 		{% csrf_token %}
 		{{ form }}
